@@ -61,7 +61,7 @@ export default class extends Controller {
       e.preventDefault();
     }
 
-    if (e.target.blur) {
+    if (e.target !== null && e.target.blur) {
       e.target.blur();
     }
 
